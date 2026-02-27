@@ -1,0 +1,81 @@
+# Dependencies
+node_modules/
+mobile/node_modules/
+
+# Build outputs
+mobile/android/app/build/
+mobile/android/build/
+mobile/ios/build/
+*.apk
+*.aab
+*.jar
+*.keystore
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.orig
+
+# Runtime settings
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.hprof
+
+# Testing
+coverage/
+*.test.js
+
+# Metro
+.metro-health-check*
+.metro-health-check*.tmp
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Android
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/captures/
+mobile/android/app/debug/
+mobile/android/app/release/
+mobile/android/app/.cxx/
+mobile/android/.gradle/
+*.hprof
+
+# React Native
+mobile/.expo/
+mobile/expo-env.d.ts
+mobile/.yarn/
+
+# Lock files (keep root, ignore mobile)
+mobile/package-lock.json
+mobile/yarn.lock
+
+# Secrets and keys
+*.pem
+*.key
+secrets/
+credentials/

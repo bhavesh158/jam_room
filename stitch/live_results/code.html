@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8c25f4",
+                        "background-light": "#f7f5f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>JamRoom - Live Results</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header Area -->
+<header class="flex items-center justify-between p-4 border-b border-primary/10">
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">arrow_back</span>
+</button>
+<div class="flex flex-col items-center">
+<h1 class="text-lg font-bold tracking-tight">JamRoom</h1>
+<div class="flex items-center gap-1.5">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Live Session</span>
+</div>
+</div>
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">more_vert</span>
+</button>
+</header>
+<main class="flex-1 px-4 py-6 max-w-2xl mx-auto w-full">
+<!-- Voted Status -->
+<div class="flex justify-center mb-6">
+<div class="inline-flex items-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary px-4 py-1.5 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-sm font-bold">check_circle</span>
+<span class="text-sm font-semibold tracking-wide uppercase">Vote Submitted</span>
+</div>
+</div>
+<!-- Poll Question -->
+<div class="text-center mb-10">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight mb-2">Which track should we jam to next?</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Poll started by <span class="text-primary font-medium">DJ Nexa</span></p>
+</div>
+<!-- Results Dashboard -->
+<div class="space-y-6">
+<div class="flex justify-between items-end mb-2 px-1">
+<p class="text-sm font-semibold text-slate-600 dark:text-slate-400">Current Standings</p>
+<p class="text-xs font-medium text-slate-400">Total: 142 Votes</p>
+</div>
+<!-- Leader Option -->
+<div class="relative group">
+<div class="flex justify-between items-center mb-2">
+<div class="flex items-center gap-2">
+<span class="text-base font-bold">Midnight City</span>
+<span class="bg-primary text-white text-[10px] px-2 py-0.5 rounded-full font-bold uppercase">Leading</span>
+</div>
+<div class="text-right">
+<span class="text-sm font-bold">72 votes</span>
+<span class="text-sm font-medium text-slate-400 ml-1">(51%)</span>
+</div>
+</div>
+<div class="w-full h-12 bg-primary/5 dark:bg-primary/10 rounded-lg overflow-hidden border border-primary/20 p-1">
+<div class="h-full bg-primary rounded-[calc(1rem-0.5rem)] flex items-center justify-end px-3 transition-all duration-500" style="width: 51%">
+<span class="material-symbols-outlined text-white text-sm">trending_up</span>
+</div>
+</div>
+</div>
+<!-- Option 2 -->
+<div class="relative">
+<div class="flex justify-between items-center mb-2">
+<span class="text-base font-medium">Electric Feel</span>
+<div class="text-right">
+<span class="text-sm font-bold">42 votes</span>
+<span class="text-sm font-medium text-slate-400 ml-1">(30%)</span>
+</div>
+</div>
+<div class="w-full h-12 bg-primary/5 dark:bg-primary/10 rounded-lg overflow-hidden border border-primary/10 p-1">
+<div class="h-full bg-primary/40 rounded-[calc(1rem-0.5rem)] transition-all duration-500" style="width: 30%"></div>
+</div>
+</div>
+<!-- Option 3 -->
+<div class="relative">
+<div class="flex justify-between items-center mb-2">
+<span class="text-base font-medium">Starlight</span>
+<div class="text-right">
+<span class="text-sm font-bold">28 votes</span>
+<span class="text-sm font-medium text-slate-400 ml-1">(19%)</span>
+</div>
+</div>
+<div class="w-full h-12 bg-primary/5 dark:bg-primary/10 rounded-lg overflow-hidden border border-primary/10 p-1">
+<div class="h-full bg-primary/40 rounded-[calc(1rem-0.5rem)] transition-all duration-500" style="width: 19%"></div>
+</div>
+</div>
+</div>
+<!-- Waiting Message -->
+<div class="mt-12 p-6 bg-slate-100 dark:bg-white/5 rounded-xl border border-dashed border-slate-300 dark:border-white/10 text-center">
+<div class="flex justify-center mb-3">
+<div class="flex gap-1">
+<div class="w-1.5 h-1.5 bg-primary/40 rounded-full animate-bounce"></div>
+<div class="w-1.5 h-1.5 bg-primary/60 rounded-full animate-bounce [animation-delay:0.2s]"></div>
+<div class="w-1.5 h-1.5 bg-primary rounded-full animate-bounce [animation-delay:0.4s]"></div>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-medium leading-relaxed">
+                Sit tight! Waiting for the host to end the poll...
+            </p>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="sticky bottom-0 w-full bg-background-light dark:bg-background-dark border-t border-primary/10 px-4 pb-6 pt-2">
+<div class="flex items-center justify-around max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Lounge</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Discover</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-[1]">bar_chart</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Polls</span>
+<div class="w-1 h-1 bg-primary rounded-full mt-0.5"></div>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

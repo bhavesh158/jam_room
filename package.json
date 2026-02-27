@@ -1,0 +1,26 @@
+{
+  "name": "jam_room",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bhavesh158@github.com/bhavesh158/jam_room.git"
+  },
+  "keywords": ["voting", "realtime", "local", "hackathon"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhavesh158/jam_room/issues"
+  },
+  "homepage": "https://github.com/bhavesh158/jam_room#readme",
+  "description": "Local Real-Time Voting Platform",
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  }
+}

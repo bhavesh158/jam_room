@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#8c25f4",
+              "background-light": "#f7f5f8",
+              "background-dark": "#191022",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-slate-900 dark:text-slate-100">
+<div class="relative flex h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="w-12"></div> <!-- Spacer for centering -->
+<h2 class="text-primary text-xl font-bold leading-tight tracking-tight flex-1 text-center">JamRoom</h2>
+<div class="flex w-12 justify-end">
+<span class="material-symbols-outlined text-primary">info</span>
+</div>
+</div>
+<!-- Hero/Illustration Area -->
+<div class="@container">
+<div class="px-4 py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-primary/10 rounded-xl min-h-[260px] relative border-2 border-primary/5" data-alt="People playing musical instruments in a neon lit room" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXO2jQF7LNrrvqyODFLH6disr7URkxqjpdtN0xrHnZeb28BqO5nw1smua9AM0rXYFdNmhxgSwDLYzgPWDkuPOjuMt_5v5qYBnonfifroLXWs_U-79fuNZiQsmlY_5XILyZYbdpv4vbckyjWIjh6Clc8FNEydQViLZjpY4-Hpb1Yc_YVljDsIEbnN-oBy9pbcumoQxQcPPfYuU3_KeN2U4L9pwmqGv9vFYpBYIbZ4esFfxG3GSf3T8SzUPWllZuQSPoh2w3rmODgsIf");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-light/80 dark:from-background-dark/80 to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 px-6 pt-8 pb-12 flex flex-col items-center">
+<h1 class="text-slate-900 dark:text-slate-100 tracking-tight text-4xl font-bold leading-tight text-center pb-2">Join the Jam</h1>
+<p class="text-slate-600 dark:text-slate-400 text-center mb-10 max-w-xs">Enter the host's server address to start making music together.</p>
+<div class="w-full max-w-md space-y-6">
+<div class="flex flex-col gap-2">
+<label class="text-slate-900 dark:text-slate-100 text-sm font-semibold px-1">
+                    Server IP Address
+                </label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/60 group-focus-within:text-primary">lan</span>
+<input class="form-input flex w-full pl-12 pr-4 h-16 rounded-xl text-slate-900 dark:text-slate-100 border-2 border-primary/10 bg-white dark:bg-slate-800/50 focus:border-primary focus:ring-0 placeholder:text-slate-400 text-lg font-medium transition-all" placeholder="e.g., 192.168.1.50" type="text"/>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white h-16 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined">sensors</span>
+                Connect to Jam
+            </button>
+</div>
+<div class="mt-auto pt-8">
+<div class="flex items-center gap-2 px-4 py-3 bg-primary/5 rounded-full border border-primary/10">
+<span class="material-symbols-outlined text-primary text-sm">wifi</span>
+<p class="text-slate-600 dark:text-slate-400 text-xs font-medium">Make sure you are on the same Wi-Fi as the host.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="flex gap-2 border-t border-primary/10 bg-white dark:bg-slate-900/50 px-4 pb-6 pt-2 backdrop-blur-md">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 rounded-full text-primary" href="#">
+<div class="h-8 flex items-center justify-center">
+<span class="material-symbols-outlined fill-1">wifi_tethering</span>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-wider">Connect</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="h-8 flex items-center justify-center">
+<span class="material-symbols-outlined">mic</span>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-wider">Sessions</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="h-8 flex items-center justify-center">
+<span class="material-symbols-outlined">settings</span>
+</div>
+<p class="text-[10px] font-bold uppercase tracking-wider">Settings</p>
+</a>
+</div>
+</div>
+</body></html>
